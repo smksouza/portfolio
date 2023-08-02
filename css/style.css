@@ -5,24 +5,27 @@
 }
 
 .container {
+  display: flex;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 body {
-    background: #222222;
-    min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background: #222222;
+  min-height: 100vh;
 }
 
 header {
-    width: 100%;
-    padding: 10px 2%;
-    background-color: rgba(196, 196, 196, 0.11);
-    backdrop-filter: blur(10px);
-    position: fixed;
-    border-bottom: solid 1px #b405fc;
-  }
+  width: 100%;
+  padding: 10px 2%;
+  background-color: rgba(196, 196, 196, 0.11);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  border-bottom: solid 1px #b405fc;
+}
 
 header img {
   max-width: 250px;
@@ -32,34 +35,66 @@ header img {
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center;  
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 ul li a {
-    font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
-    text-decoration: none;
-    color: white;   
-    opacity: 0.5;
-    transition: all 0.3s ease;
-    border: 2px solid #b405fc;
-    padding: 5px 10px;  
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  border: 2px solid #b405fc;
+  padding: 5px 10px;
 }
 
 ul li a:hover {
-    font-weight: 700;
-    opacity: 1;
-    color: #b405fc;
+  font-weight: 700;
+  opacity: 1;
+  color: #b405fc;
 }
 
 ul li a.active {
-    font-weight: 700;
-    opacity: 1;
-    color: #b405fc;
-  }
+  font-weight: 700;
+  opacity: 1;
+  color: #b405fc;
+}
+
+/* Header finalizado */
+
+.home > .container{
+  margin-top: 330px;
+}
+
+.home-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 100%;
+  line-height: px;
+}
+
+.home-info p {
+  color: white;
+  font-size: 40px;
+}
+
+.home-info h2 {
+  color: #b405fc;
+  font-size: 80px;
+}
+
+.home-info h1 {
+  color: white;
+  font-size: 50px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #b405fc;
+}
+
+
