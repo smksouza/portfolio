@@ -60,7 +60,6 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
 }
 
 nav ul {
@@ -98,7 +97,7 @@ ul li a.active {
   animation: entering 1s ease-in-out;
 }
 
-.home > .container{
+.home > .container {
   margin-top: 300px;
 }
 
@@ -143,11 +142,48 @@ ul li a.active {
   filter: brightness(1.1);
 }
 
-.button a:hover{
+.button a:hover {
   transform: scale(1.1);
   opacity: 1;
   color: white;
 }
 
+.about {
+  margin-top: 400px;
+}
 
+.about > .container {
+  flex-direction: column;
+}
+.about-title {
+  color: #b405fc;
+  font-size: 50px;
+}
 
+.about-info {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-info img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  background: linear-gradient(#d39e33, #ed5636, #633bbc) padding-box,
+    linear-gradient(260deg, #d39e33, #ed5636, #633bbc) border-box;
+}
+
+.about-info p {
+  color: white;
+  max-width: 550px;
+}
+
+.tech-title {
+  margin-top: 50px;
+  color: #b405fc;
+  font-size: 50px;
+  margin-bottom: 450px;
+}
