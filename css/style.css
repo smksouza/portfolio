@@ -187,3 +187,17 @@ ul li a.active {
   font-size: 50px;
   margin-bottom: 450px;
 }
+
+footer {
+  width: 100%;
+  padding: 20px 2%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border-top: solid 1px #b405fc;
+}
+
+footer p {
+  text-align: center;
+  color: #b405fc;
+
+}
