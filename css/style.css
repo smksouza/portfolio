@@ -189,6 +189,28 @@ ul li a.active {
   font-size: 50px;
   margin-bottom: 450px;
 }
+#btnTop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b405fc;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+#btnTop img {
+  width: 20px;
+  height: 20px;
+}
+
+.up {
+  transform: rotate(-135deg);
+}
 
 footer {
   display: flex;
@@ -197,7 +219,6 @@ footer {
   width: 100%;
   padding: 20px 2%;
   background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(10px);
   border-top: solid 1px #b405fc;
 }
 
