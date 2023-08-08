@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -205,11 +206,7 @@ ul li a.active {
 
 #btnTop img {
   width: 20px;
-  height: 20px;
-}
-
-.up {
-  transform: rotate(-135deg);
+  height: 15px;
 }
 
 footer {

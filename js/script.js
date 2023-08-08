@@ -1,5 +1,10 @@
-const btn = document.getElementById("btnTop")
+document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("btnTop");
 
-btn.addEventListener("click", function(){
-    window.scroll(0,0)
-})
+    btn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
