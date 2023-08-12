@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
+  height: 100%;
   scroll-behavior: smooth;
 }
 
@@ -39,6 +41,7 @@ body {
 
 .container {
   display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -99,11 +102,11 @@ ul li a.active {
 /* Header Finalizado */
 
 .home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   animation: entering 1s ease-in-out;
-}
-
-.home > .container {
-  margin-top: 250px;
 }
 
 .home-info {
@@ -157,11 +160,12 @@ ul li a.active {
 /* Home Finalizado */
 
 .about {
-  margin-top: 400px;
-}
-
-.about > .container {
+  color: white;
+  height: 100vh;
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-title h2 {
@@ -193,13 +197,27 @@ ul li a.active {
   max-width: 550px;
 }
 
-.tech-title {
-  margin-top: 50px;
+.about-text p:not(:first-child) {
+  margin-top: 10px;
+}
+
+.my-technologies h2 {
+  margin-top: 30px;
+  font-size: 30px;
   color: #b405fc;
-  font-size: 50px;
-  border-bottom: 2px solid #b405fc;
-  text-align: left;
-  margin-bottom: 450px;
+  text-align: center;
+  text-transform: uppercase;
+  border-top: 2px solid #b405fc;
+}
+
+/* Sobre Min Finalizado */
+
+.projects {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #btnTop {
@@ -240,7 +258,7 @@ footer p {
   color: #b405fc;
 }
 
-.social-network {
+footer .social-network {
   display: flex;
   align-items: center;
 }
