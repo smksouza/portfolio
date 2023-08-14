@@ -1,4 +1,7 @@
 const btn = document.getElementById("btnTop");
+const btnCopyEmail = document.getElementById("copyEmail");
+
+const email = "smksouza.dev@gmail.com";
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 200) {
@@ -13,7 +16,7 @@ btn.addEventListener("click", () => {
 });
 
 function scrollToTop() {
-  const scrollStep = -window.scrollY / (50);
+  const scrollStep = -window.scrollY / 50;
 
   function scroll() {
     if (window.scrollY !== 0) {
@@ -24,3 +27,11 @@ function scrollToTop() {
 
   requestAnimationFrame(scroll);
 }
+
+btnCopyEmail.addEventListener("click", () => {
+  navigator.clipboard.writeText(email).then(() => {
+    alert("Email copiado com sucesso !")
+  }).catch((error) => {
+    console.error("Error ao copiar o email:", error)
+  })
+});

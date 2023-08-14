@@ -87,13 +87,6 @@ ul li a {
 }
 
 ul li a:hover {
-  transform: scale(1.1);
-  opacity: 1;
-  color: #b405fc;
-  filter: brightness(1.2);
-}
-
-ul li a.active {
   font-weight: 700;
   opacity: 1;
   color: #b405fc;
@@ -255,7 +248,7 @@ ul li a.active {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 10%;
   border: none;
   width: 32px;
@@ -270,7 +263,7 @@ ul li a.active {
 
 #btnTop:hover {
   transition: all 0.4s ease;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 footer {
@@ -291,6 +284,12 @@ footer p {
 footer .social-network {
   display: flex;
   align-items: center;
+}
+
+footer button {
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 footer img {
