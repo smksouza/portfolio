@@ -140,7 +140,7 @@ ul li a:hover {
   border: 2px solid #b405fc;
   border-radius: 5px;
   padding: 5px 50px;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
   filter: brightness(1.1);
 }
 
@@ -194,8 +194,7 @@ ul li a:hover {
   margin-top: 10px;
 }
 
-/* Sobre Min Finalizado */
-
+/* Sobre Mim Finalizado */
 
 .my-technologies h2 {
   margin-top: 50px;
@@ -218,20 +217,20 @@ ul li a:hover {
 }
 
 .icon span {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   margin: 25px 0 10px 0;
 }
 
 .icon svg {
-  fill: #b605fcab;
+  fill: #b605fc;
+  opacity: 0.6;
   width: 100px;
   height: 100px;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
 }
 
 .icon svg:hover {
-  fill: #b405fc;
-  filter: brightness(1.1);
+  opacity: 1;
   transform: scale(0.9);
 }
 
@@ -262,7 +261,7 @@ ul li a:hover {
 }
 
 #btnTop:hover {
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -296,7 +295,7 @@ footer img {
   opacity: 1;
   width: 50px;
   height: 50px;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
 }
 
 footer img:hover {
