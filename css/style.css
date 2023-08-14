@@ -201,6 +201,9 @@ ul li a.active {
   margin-top: 10px;
 }
 
+/* Sobre Min Finalizado */
+
+
 .my-technologies h2 {
   margin-top: 50px;
   font-size: 30px;
@@ -210,7 +213,34 @@ ul li a.active {
   border-top: 2px solid #b405fc;
 }
 
-/* Sobre Min Finalizado */
+.technologies {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon span {
+  font-family: 'JetBrains Mono', monospace;
+  margin: 25px 0 10px 0;
+}
+
+.icon svg {
+  fill: #b605fcab;
+  width: 100px;
+  height: 100px;
+  transition: all 0.4s ease;
+}
+
+.icon svg:hover {
+  fill: #b405fc;
+  filter: brightness(1.1);
+  transform: scale(0.9);
+}
 
 .projects {
   height: 100vh;
