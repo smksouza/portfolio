@@ -36,16 +36,17 @@ body {
 body {
   font-family: "Open Sans", sans-serif;
   background: #121215;
-  min-height: 100vh;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1280px;
+  max-width: 1440px;
+  padding: 0 2%;
   margin: 0 auto;
 }
+
 
 header {
   width: 100%;
@@ -95,10 +96,12 @@ ul li a:hover {
 /* Header Finalizado */
 
 .home {
-  height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  height: 100vh;
   justify-content: center;
+  align-items: center;
   animation: entering 1s ease-in-out;
 }
 
@@ -153,13 +156,15 @@ ul li a:hover {
 /* Home Finalizado */
 
 .about {
-  color: white;
-  height: 100vh;
+  background-color: aqua;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 100vh;
   justify-content: center;
+  align-items: center;
+  color: white;
 }
+
 
 .about-title h2 {
   color: #b405fc;
@@ -170,7 +175,6 @@ ul li a:hover {
 }
 
 .about-info {
-  margin-top: 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -197,7 +201,6 @@ ul li a:hover {
 /* Sobre Mim Finalizado */
 
 .my-technologies h2 {
-  margin-top: 50px;
   font-size: 30px;
   color: #b405fc;
   text-align: center;
@@ -301,4 +304,10 @@ footer img {
 footer img:hover {
   filter: brightness(1.1);
   transform: scale(1.1);
+}
+
+@media (max-width: 1366px){
+.container{
+  max-width: 100%;
+}
 }
