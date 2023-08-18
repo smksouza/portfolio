@@ -47,7 +47,6 @@ body {
   margin: 0 auto;
 }
 
-
 header {
   width: 100%;
   padding: 10px 2%;
@@ -98,7 +97,6 @@ ul li a:hover {
 .home {
   display: flex;
   flex-direction: column;
-  flex: 1;
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -156,15 +154,12 @@ ul li a:hover {
 /* Home Finalizado */
 
 .about {
-  background-color: aqua;
   display: flex;
   flex-direction: column;
   height: 100vh;
   justify-content: center;
-  align-items: center;
   color: white;
 }
-
 
 .about-title h2 {
   color: #b405fc;
@@ -175,9 +170,11 @@ ul li a:hover {
 }
 
 .about-info {
+  margin: 50px 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  max-width: 100%;
 }
 
 .about-info img {
@@ -209,8 +206,9 @@ ul li a:hover {
 }
 
 .technologies {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 20px;
 }
 
 .icon {
@@ -234,15 +232,50 @@ ul li a:hover {
 
 .icon svg:hover {
   opacity: 1;
+  filter: brightness();
   transform: scale(0.9);
 }
 
+/* Conhecimento Finalizado */
+
 .projects {
+  background-color: #222222;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.projectsTitle h2 {
+  color: #b405fc;
+  font-size: 50px;
+  border-bottom: 2px solid #b405fc;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.myProjects {
+  margin-top: 50px;
+  display: grid;
+  grid-template-areas: "overlay overlay overlay";
+  gap: 20px;
+  align-items: center;
+  justify-self: center;
+}
+
+.overlay {
+  background-color: white;
+  width: 320px;
+  height: 180px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay:hover {
+  border: 1px solid #b405fc;
 }
 
 #btnTop {
@@ -251,10 +284,9 @@ ul li a:hover {
   right: 20px;
   bottom: 20px;
   background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 10%;
   border: none;
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
 }
 
@@ -306,8 +338,5 @@ footer img:hover {
   transform: scale(1.1);
 }
 
-@media (max-width: 1366px){
-.container{
-  max-width: 100%;
-}
+@media (max-width: 1366px) {
 }
