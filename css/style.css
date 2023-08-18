@@ -94,7 +94,7 @@ ul li a:hover {
 
 /* Header Finalizado */
 
-.home {
+#home {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -107,7 +107,6 @@ ul li a:hover {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  max-width: 100%;
 }
 
 .home-info p {
@@ -122,7 +121,7 @@ ul li a:hover {
 
 .home-info h1 {
   color: white;
-  font-size: 50px;
+  font-size: 60px;
   text-transform: uppercase;
   border-bottom: 1px solid #b405fc;
 }
@@ -153,10 +152,11 @@ ul li a:hover {
 
 /* Home Finalizado */
 
-.about {
+#about {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  align-items: center;
   justify-content: center;
   color: white;
 }
@@ -238,8 +238,7 @@ ul li a:hover {
 
 /* Conhecimento Finalizado */
 
-.projects {
-  background-color: #222222;
+#projects {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -258,13 +257,14 @@ ul li a:hover {
 .myProjects {
   margin-top: 50px;
   display: grid;
-  grid-template-areas: "overlay overlay overlay";
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   align-items: center;
   justify-self: center;
 }
 
 .overlay {
+  opacity: 0.6;
   background-color: white;
   width: 320px;
   height: 180px;
@@ -272,9 +272,12 @@ ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid rgb(49, 57, 88);
+  transition: all 0.3s ease-in-out;
 }
 
 .overlay:hover {
+  opacity: 1;
   border: 1px solid #b405fc;
 }
 
