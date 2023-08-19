@@ -255,22 +255,21 @@ ul li a:hover {
 }
 
 .myProjects {
+  width: 100%;
+  height: 100%;
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   align-items: center;
-  justify-self: center;
 }
 
-#aboutProjects {
-  display: flex;
-  flex-direction: column;
+.projectsPreview {
+  background-color: #222222;
 }
 
 .overlay {
   position: relative;
-  opacity: 0.6;
   width: 320px;
   height: 180px;
   border-radius: 10px;
@@ -282,32 +281,130 @@ ul li a:hover {
   transition: all 0.5s ease-in-out;
 }
 
-
-
-.overlay h2{
-  position: absolute;
-
+.overlayActive {
+  cursor: pointer;
 }
 
-.overlay a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.overlay img {
+.overlayActive img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0.6;
+  transition: all 0.3s ease-in-out;
+}
+
+.overlayTitle {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.overlayTitle h1 {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  left: 5%;
+  bottom: 5%;
+  margin: 0;
+  padding: 0;
+}
+
+.overlayTitle p {
+  color: #b405fc;
+  font-weight: 600;
 }
 
 .overlay:hover {
-  opacity: 1;
   border: 1px solid #b405fc;
 }
 
-.projectsInfo {
-  display: hidden;
+.overlayActive img:hover {
+  opacity: 1;
+}
+
+#projectsInfo {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  display: grid;
+  place-content: center;
+  display: none;
+}
+
+.rocketnotesInfo {
+  background-color: #222222;
+  width: 700px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 2% 0;
+  opacity: 1;
+  visibility: 1;
+}
+
+.rocketnotesInfo.open {
+  opacity: 1;
+  visibility: 1;
+}
+
+.rocketnotesInfo img {
+  object-fit: cover;
+  width: 100%;
+  height: 60%;
+}
+
+.close {
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  transition: all 0.3s ease-in-out;
+}
+
+.close:hover {
+  transform: scale(1.1);
+}
+
+.rocketnotesInfo h2 {
+  color: #b405fc;
+}
+
+.rocketnotesInfo p {
+  color: white;
+}
+
+.rocketnotesInfo ul {
+  display: flex;
+  gap: 10px;
+  font-family: "JetBrains Mono", monospace;
+  list-style: none;
+  color: white;
+  font-weight: 600;
+}
+.rocketnotesInfo li {
+  border-bottom: 1px solid #b405fc;
+}
+
+.buttonRocket a {
+  display: inline-block;
+  margin-top: 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: white;
+  border-radius: 10px;
+  padding: 8px 5%;
+  white-space: nowrap;
 }
 
 #btnTop {

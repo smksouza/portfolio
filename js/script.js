@@ -1,5 +1,8 @@
 const btn = document.getElementById("btnTop");
 const btnCopyEmail = document.getElementById("copyEmail");
+const rocketNotesOverlay = document.getElementById("Rocketnotes");
+const projectsInfoSection = document.getElementById("projectsInfo");
+const btnCloseRocket = document.getElementById("closeRocket")
 
 const email = "smksouza.dev@gmail.com";
 
@@ -17,7 +20,7 @@ btn.addEventListener("click", () => {
 
 function scrollToTop() {
   const scrollStep = -window.scrollY / 50;
-
+  
   function scroll() {
     if (window.scrollY !== 0) {
       window.scrollBy(0, scrollStep);
@@ -34,4 +37,14 @@ btnCopyEmail.addEventListener("click", () => {
   }).catch((error) => {
     console.error("Error ao copiar o email:", error)
   })
+});
+
+
+
+rocketNotesOverlay.addEventListener("click", () => {
+  projectsInfoSection.style.display = "grid";
+});
+
+btnCloseRocket.addEventListener("click", () => {
+  projectsInfoSection.style.display = "none";
 });
