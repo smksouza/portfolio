@@ -263,9 +263,14 @@ ul li a:hover {
   justify-self: center;
 }
 
+#aboutProjects {
+  display: flex;
+  flex-direction: column;
+}
+
 .overlay {
+  position: relative;
   opacity: 0.6;
-  background-color: white;
   width: 320px;
   height: 180px;
   border-radius: 10px;
@@ -273,12 +278,36 @@ ul li a:hover {
   justify-content: center;
   align-items: center;
   border: 1px solid rgb(49, 57, 88);
-  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+
+
+.overlay h2{
+  position: absolute;
+
+}
+
+.overlay a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .overlay:hover {
   opacity: 1;
   border: 1px solid #b405fc;
+}
+
+.projectsInfo {
+  display: hidden;
 }
 
 #btnTop {
