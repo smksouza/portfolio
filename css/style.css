@@ -21,17 +21,6 @@ body {
   background-color: #9e9ea0;
 }
 
-@keyframes entering {
-  0% {
-    opacity: 0;
-    transform: translateY(-200px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 body {
   font-family: "Open Sans", sans-serif;
   background: #121215;
@@ -54,6 +43,7 @@ header {
   position: fixed;
   top: 0;
   border-bottom: solid 1px #b405fc;
+  z-index: 999;
 }
 
 header img {
@@ -97,7 +87,6 @@ ul li a:hover {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  animation: entering 1s ease-in-out;
 }
 
 .home-info {
