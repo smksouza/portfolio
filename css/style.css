@@ -86,9 +86,7 @@ ul li a {
 }
 
 ul li a:hover {
-  font-weight: 700;
   opacity: 1;
-  color: #b405fc;
 }
 
 /* Header Finalizado */
@@ -169,6 +167,10 @@ ul li a:hover {
   text-transform: uppercase;
 }
 
+.about-title span {
+  color: white;
+}
+
 .about-info {
   margin: 50px 0;
   display: flex;
@@ -203,6 +205,10 @@ ul li a:hover {
   text-align: center;
   text-transform: uppercase;
   border-top: 2px solid #b405fc;
+}
+
+.my-technologies span {
+  color: white;
 }
 
 .technologies {
@@ -253,6 +259,10 @@ ul li a:hover {
   border-bottom: 2px solid #b405fc;
   text-align: left;
   text-transform: uppercase;
+}
+
+.projectsTitle span {
+  color: white;
 }
 
 .myProjects {
