@@ -261,7 +261,8 @@ ul li a:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  align-items: center;
+  align-items: stretch; /* Mudar para "stretch" para centralizar verticalmente */
+  justify-content: center; /* Centralizar horizontalmente */
 }
 
 .projectsPreview {
@@ -484,5 +485,16 @@ footer img:hover {
   transform: scale(1.1);
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1400px) {
+
+  .myProjects {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1050px) {
+  .myProjects{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
