@@ -101,8 +101,9 @@ ul li a:hover {
 }
 
 .home-info h2 {
-  color: #b405fc;
+  color: #b605fc;
   font-size: 80px;
+  text-shadow: 0px 0px 4px #b405fc;
 }
 
 .home-info h1 {
@@ -110,28 +111,34 @@ ul li a:hover {
   font-size: 60px;
   text-transform: uppercase;
   border-bottom: 1px solid #b405fc;
+  text-shadow: 1px 1px 1px #b405fc;
 }
 
 .button-social {
   display: flex;
   gap: 20px;
-  margin-top: 60px;
+  margin-top: 20px;
+}
+.button-social button {
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 .button-social svg {
-  width: 70px;
-  height: 70px;
+  opacity: 0.7;
+  width: 60px;
+  height: 60px;
   padding: 10px;
-  background-color: #222222;
   fill: white;
+  border: 1px solid #b405fc;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
-  border: 1px solid rgb(49, 57, 88);
 }
-
 
 .button-social svg:hover {
   opacity: 1;
-  border-color: #b405fc;
+  box-shadow: 0px 0px 8px #b405fc;
+  border: 1px solid #b405fc;
 }
 
 /* Home Finalizado */
