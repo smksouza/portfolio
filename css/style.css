@@ -113,6 +113,9 @@ ul li a:hover {
   border-bottom: 1px solid #b405fc;
   text-shadow: 1px 1px 1px #b405fc;
 }
+.home-info span {
+  text-shadow: none;
+}
 
 .button-social {
   display: flex;
@@ -511,6 +514,20 @@ footer img:hover {
   }
 }
 
+@media (max-width: 1366px){
+  .myProjects {
+    height: 399px;
+    overflow: hidden;
+  }
+  .myProjects.active {
+    min-height: 100vh;
+    overflow: visible;
+  }
+  #readBtn {
+    display: block;
+  }
+}
+
 @media (max-width: 1050px) {
   #about {
     height: 100%;
@@ -529,15 +546,6 @@ footer img:hover {
   }
   .myProjects {
     grid-template-columns: repeat(2, 1fr);
-    height: 399px;
-    overflow: hidden;
-  }
-  .myProjects.active {
-    min-height: 100vh;
-    overflow: visible;
   }
 
-  #readBtn {
-    display: block;
-  }
 }
