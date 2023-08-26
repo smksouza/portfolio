@@ -213,7 +213,7 @@ ul li a:hover {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: 20px;
-  align-items: center; /* Centraliza verticalmente */
+  align-items: center;
 }
 
 .icon {
@@ -520,6 +520,9 @@ footer img:hover {
 }
 
 @media (max-width: 1366px) {
+  .technologies {
+    grid-template-columns: repeat(5, 1fr);
+  }
   .myProjects {
     height: 399px;
     overflow: hidden;
@@ -549,19 +552,12 @@ footer img:hover {
 }
 
 @media (max-width: 1050px), (max-height: 810px) {
-
   #about {
     padding: 100px 0;
   }
 
   .technologies {
-    grid-template-columns: repeat(5, 1fr);
-    justify-content: center;
-  }
-
-  .icon svg {
-    width: 65px;
-    height: 65px;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   #projects {
@@ -583,15 +579,22 @@ footer img:hover {
   .home-info h1 {
     font-size: 25px;
   }
+  .about-title h2 {
+    text-align: center;
+    font-size: 40px;
+  }
   .about-info {
     flex-direction: column;
     gap: 20px;
   }
-  .myProjects{
+  .icon svg {
+    width: 65px;
+    height: 65px;
+  }
+  .myProjects {
     grid-template-columns: repeat(1, 1fr);
   }
-  .overlay{
-    width: 450px;
-    height: 250px;
+  .technologies {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
