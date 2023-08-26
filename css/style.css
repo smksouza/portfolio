@@ -353,6 +353,7 @@ ul li a:hover {
   border: 1px solid #b405fc;
   font-size: 16px;
   padding: 10px;
+  margin: 15px 0;
   color: white;
   cursor: pointer;
   display: none;
@@ -508,6 +509,9 @@ footer img:hover {
 }
 
 @media (max-width: 1400px) {
+  #projects {
+    margin: 0 0 50px 0;
+  }
   .myProjects {
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
@@ -520,7 +524,7 @@ footer img:hover {
     overflow: hidden;
   }
   .myProjects.active {
-    min-height: 100vh;
+    height: auto;
     overflow: visible;
   }
   #readBtn {
@@ -528,12 +532,12 @@ footer img:hover {
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1050px), (max-height: 810px) {
   #about {
-    height: 100%;
+    padding: 100px 0;
   }
   .technologies {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     justify-content: center;
   }
   .icon svg {
