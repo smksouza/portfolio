@@ -1,33 +1,7 @@
-function handleScrollButton() {
-  const btn = document.getElementById("btnTop");
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 200) {
-      btn.style.display = "block";
-    } else {
-      btn.style.display = "none";
-    }
-  });
-
-  btn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-}
-
-function handleCopyEmail() {
-  const email = "smksouza.dev@gmail.com";
-  const btnCopyEmail = document.getElementById("copyEmail");
-
-  btnCopyEmail.addEventListener("click", () => {
-    navigator.clipboard
-      .writeText(email)
-      .then(() => {
-        alert("Email copiado com sucesso !");
-      })
-      .catch((error) => {
-        console.error("Error ao copiar o email:", error);
-      });
-  });
-}
+import { handleReadMoreButton } from "./readMoreButton.js";
+import { handleScrollButton } from "./scrollButton.js";
+import { handleCopyEmail } from "./copyEmail.js";
+import { reveal } from "./scrollReveal.js";
 
 function handleRocketNotesOverlay() {
   const rocketNotesOverlay = document.getElementById("Rocketnotes");
@@ -43,18 +17,7 @@ function handleRocketNotesOverlay() {
   });
 }
 
-function handleReadMoreButton() {
-  const readBtn = document.getElementById("readBtn");
-  const myProjects = document.querySelector(".myProjects");
-  readBtn.addEventListener("click", () => {
-    myProjects.classList.toggle("active");
-    if (myProjects.classList.contains("active")) {
-      return (readBtn.textContent = "Ver menos");
-    }
-    readBtn.textContent = "Ver mais";
-  });
-}
-
+reveal();
 handleReadMoreButton();
 handleCopyEmail();
 handleScrollButton();
