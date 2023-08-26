@@ -369,9 +369,12 @@ ul li a:hover {
   inset: 0;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 999;
-  display: grid;
-  place-content: center;
   display: none;
+  place-content: center; 
+}
+
+#projectsInfo.open {
+  display: grid;
 }
 
 .rocketnotesInfo {
@@ -386,13 +389,6 @@ ul li a:hover {
   align-items: center;
   justify-content: space-between;
   padding: 0 0 2% 0;
-  opacity: 1;
-  visibility: 1;
-}
-
-.rocketnotesInfo.open {
-  opacity: 1;
-  visibility: 1;
 }
 
 .rocketnotesInfo img {
