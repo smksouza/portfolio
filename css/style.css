@@ -206,6 +206,7 @@ ul li a:hover {
 
 .my-technologies span {
   color: white;
+  white-space: nowrap;
 }
 
 .technologies {
@@ -518,7 +519,7 @@ footer img:hover {
   }
 }
 
-@media (max-width: 1366px){
+@media (max-width: 1366px) {
   .myProjects {
     height: 399px;
     overflow: hidden;
@@ -532,14 +533,32 @@ footer img:hover {
   }
 }
 
+@media (max-width: 1024px) {
+  #home {
+    text-align: center;
+  }
+  .home-info h1 {
+    font-size: 50px;
+  }
+  .home-info span {
+    display: none;
+  }
+  .button-social {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 1050px), (max-height: 810px) {
+
   #about {
     padding: 100px 0;
   }
+
   .technologies {
     grid-template-columns: repeat(5, 1fr);
     justify-content: center;
   }
+
   .icon svg {
     width: 65px;
     height: 65px;
@@ -547,9 +566,32 @@ footer img:hover {
 
   #projects {
     margin: 50px 0;
+    padding: 2%;
   }
   .myProjects {
     grid-template-columns: repeat(2, 1fr);
   }
+}
 
+@media (max-width: 870px) {
+  .home-info p {
+    font-size: 25px;
+  }
+  .home-info h2 {
+    font-size: 40px;
+  }
+  .home-info h1 {
+    font-size: 32px;
+  }
+  .about-info {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .myProjects{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .overlay{
+    width: 450px;
+    height: 250px;
+  }
 }
