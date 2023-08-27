@@ -18,7 +18,7 @@ export function createRocketNotesInfo() {
   image.alt = "";
 
   const heading = document.createElement("h2");
-  heading.textContent = "Rocketnotes";
+  heading.textContent = "Rocket Notes";
 
   const description1 = document.createElement("p");
   description1.textContent =
@@ -34,7 +34,7 @@ export function createRocketNotesInfo() {
     "JavaScript",
     "Styled Components",
     "NodeJS",
-    "Express",
+    "Vite",
     "SQLite",
     "knexJS",
   ];

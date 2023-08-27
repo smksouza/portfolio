@@ -307,7 +307,7 @@ ul li a:hover {
 .overlay h2 {
   color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-  transform: rotate(-28deg);
+  transform: rotate(-27deg);
   background-color: rgba(0, 0, 0, 0.9);
   width: 120%; /* Aumente a largura para cobrir todo o overlay */
   text-align: center;
@@ -375,6 +375,7 @@ ul li a:hover {
   z-index: 999;
   display: none;
   place-content: center;
+  padding: 2%;
 }
 
 #projectsInfo.open {
@@ -417,6 +418,7 @@ ul li a:hover {
 
 .rocketnotesInfo h2 {
   color: #b405fc;
+
 }
 
 .rocketnotesInfo p {
@@ -425,28 +427,31 @@ ul li a:hover {
 
 .rocketnotesInfo ul {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
   font-family: "JetBrains Mono", monospace;
   list-style: none;
   color: white;
   font-weight: 600;
-}
-.rocketnotesInfo li {
-  border-bottom: 1px solid #b405fc;
+  padding: 0 10px;
 }
 
 .buttonRocket a {
+  color: white;
   display: inline-block;
-  margin-top: 0px;
+  margin: 10px 0;
   text-decoration: none;
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  background-color: white;
   border: 1px solid #b405fc;
-  border-radius: 10px;
   padding: 8px 5%;
   white-space: nowrap;
+}
+
+.buttonRocket a:hover{
+  box-shadow: 0px 0px 6px #b405fc;
 }
 
 #btnTop {
@@ -538,7 +543,7 @@ footer img:hover {
 
 @media (max-width: 1050px), (max-height: 810px) {
   #about {
-    padding: 100px 0;
+    padding-top: 70px;
   }
 
   #projects {
@@ -595,6 +600,12 @@ footer img:hover {
   }
   .icon span {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 750px) {
+  .rocketnotesInfo {
+    width: auto;
   }
 }
 
