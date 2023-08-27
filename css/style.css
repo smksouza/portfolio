@@ -418,7 +418,6 @@ ul li a:hover {
 
 .rocketnotesInfo h2 {
   color: #b405fc;
-
 }
 
 .rocketnotesInfo p {
@@ -450,7 +449,7 @@ ul li a:hover {
   white-space: nowrap;
 }
 
-.buttonRocket a:hover{
+.buttonRocket a:hover {
   box-shadow: 0px 0px 6px #b405fc;
 }
 
@@ -525,12 +524,21 @@ footer img:hover {
 }
 
 @media (max-width: 1366px) {
+  #about {
+    padding-top: 70px;
+  }
+
   .technologies {
     grid-template-columns: repeat(6, 1fr);
+  }
+  #projects {
+    margin: 50px 0;
+    padding-top: 70px;
   }
   .myProjects {
     height: 399px;
     overflow: hidden;
+    grid-template-columns: repeat(3, 1fr);
   }
   .myProjects.active {
     height: auto;
@@ -541,15 +549,7 @@ footer img:hover {
   }
 }
 
-@media (max-width: 1050px), (max-height: 810px) {
-  #about {
-    padding-top: 70px;
-  }
-
-  #projects {
-    margin: 50px 0;
-    padding: 2%;
-  }
+@media (max-width: 1050px) {
   .myProjects {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -588,9 +588,19 @@ footer img:hover {
     flex-direction: column;
     gap: 20px;
   }
+  .about-info img {
+    width: 150px;
+    height: 150px;
+  }
+  .about-me p {
+    text-align: center;
+  }
   .icon svg {
     width: 65px;
     height: 65px;
+  }
+  .projectsTitle h2 {
+    text-align: center;
   }
   .myProjects {
     grid-template-columns: repeat(1, 1fr);
