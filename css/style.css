@@ -206,10 +206,11 @@ ul li a:hover {
 
 .my-technologies span {
   color: white;
-  white-space: nowrap;
 }
 
 .technologies {
+  margin-top: 25px;
+  padding: 0 2%;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: 20px;
@@ -220,11 +221,14 @@ ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .icon span {
   font-family: "JetBrains Mono", monospace;
-  margin: 25px 0 10px 0;
+  font-size: 16px;
+  margin-bottom: 10px;
+  white-space: nowrap;
 }
 
 .icon svg {
@@ -370,7 +374,7 @@ ul li a:hover {
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 999;
   display: none;
-  place-content: center; 
+  place-content: center;
 }
 
 #projectsInfo.open {
@@ -517,7 +521,7 @@ footer img:hover {
 
 @media (max-width: 1366px) {
   .technologies {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
   .myProjects {
     height: 399px;
@@ -529,6 +533,20 @@ footer img:hover {
   }
   #readBtn {
     display: block;
+  }
+}
+
+@media (max-width: 1050px), (max-height: 810px) {
+  #about {
+    padding: 100px 0;
+  }
+
+  #projects {
+    margin: 50px 0;
+    padding: 2%;
+  }
+  .myProjects {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -544,24 +562,6 @@ footer img:hover {
   }
   .button-social {
     justify-content: center;
-  }
-}
-
-@media (max-width: 1050px), (max-height: 810px) {
-  #about {
-    padding: 100px 0;
-  }
-
-  .technologies {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  #projects {
-    margin: 50px 0;
-    padding: 2%;
-  }
-  .myProjects {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -590,6 +590,15 @@ footer img:hover {
   .myProjects {
     grid-template-columns: repeat(1, 1fr);
   }
+  .technologies {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .icon span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 550px) {
   .technologies {
     grid-template-columns: repeat(3, 1fr);
   }
