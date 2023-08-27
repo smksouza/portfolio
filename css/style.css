@@ -64,7 +64,7 @@ nav ul {
   gap: 20px;
 }
 
-ul li a {
+.nav-list ul li a {
   font-weight: 600;
   text-decoration: none;
   color: white;
@@ -77,6 +77,26 @@ ul li a {
 
 ul li a:hover {
   opacity: 1;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu-icon button {
+  border: none;
+  background: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.mobile-menu-icon svg {
+  fill: #b405fc;
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-menu {
+  display: none;
 }
 
 /* Header Finalizado */
@@ -614,6 +634,43 @@ footer img:hover {
 }
 
 @media (max-width: 750px) {
+  header {
+    padding: 0;
+  }
+  nav {
+    padding: 2%;
+    justify-content: space-between;
+  }
+  .nav-list {
+    display: none;
+  }
+  .mobile-menu-icon {
+    display: block;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .open-menu {
+    display: block;
+  }
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-end;
+    gap: 5px;
+  }
+  .mobile-menu li {
+    opacity: 1;
+    border-bottom: 1px solid #b405fc;
+    padding: 2%;
+  }
+  .mobile-menu li a {
+    text-decoration: none;
+    width: 100%;
+    border: none;
+    color: white;
+  }
   .rocketnotesInfo {
     width: auto;
   }
