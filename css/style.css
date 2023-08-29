@@ -131,11 +131,8 @@ ul li a:hover {
   font-size: 60px;
   text-transform: uppercase;
   border-bottom: 1px solid #b405fc;
-  text-shadow: 1px 1px 1px #b405fc;
 }
-.home-info span {
-  text-shadow: none;
-}
+
 
 .button-social {
   display: flex;
