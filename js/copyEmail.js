@@ -1,6 +1,6 @@
-export function handleCopyEmail() {
+export function handleCopyEmail(copyEmail) {
   const email = "smksouza.dev@gmail.com";
-  const btnCopyEmail = document.getElementById("copyEmail");
+  const btnCopyEmail = document.getElementById(copyEmail);
 
   btnCopyEmail.addEventListener("click", () => {
     navigator.clipboard
