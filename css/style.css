@@ -133,7 +133,6 @@ ul li a:hover {
   border-bottom: 1px solid #b405fc;
 }
 
-
 .button-social {
   display: flex;
   gap: 20px;
@@ -147,17 +146,16 @@ ul li a:hover {
 .button-social svg {
   width: 60px;
   height: 60px;
-  padding: 10px;
-  fill: #e6e6e6;
-  border: 1px solid #b405fc;
+  padding: 5px;
+  fill: gray;
   border-radius: 10px;
-  transition: all 0.3s ease-in-out;
+  border: 2px solid #b405fc;
+  transition: all 0.2s ease-in-out;
 }
 
 .button-social svg:hover {
-  fill: #b405fc;
-  box-shadow: 0px 0px 8px #b405fc;
-  border: 1px solid #b405fc;
+  fill: white;
+  box-shadow: 0 0 5px #633bbc;
 }
 
 /* Home Finalizado */
