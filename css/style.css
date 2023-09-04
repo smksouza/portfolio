@@ -42,7 +42,7 @@ header {
   backdrop-filter: blur(10px);
   position: fixed;
   top: 0;
-  border-bottom: solid 1px #b405fc;
+  border-bottom: solid 1px #6833e4;
   z-index: 999;
 }
 
@@ -53,7 +53,7 @@ header {
 }
 
 #logo span {
-  color: #b405fc;
+  color: #8257e5;
   text-decoration: none;
 }
 
@@ -86,7 +86,7 @@ nav ul {
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #b405fc;
+  background-color: #8257e5;
   transition: all 0.3s ease;
 }
 
@@ -109,7 +109,7 @@ nav ul {
   cursor: pointer;
 }
 .mobile-menu-icon svg {
-  fill: #b405fc;
+  fill: #8257e5;
   width: 40px;
   height: 40px;
 }
@@ -140,16 +140,16 @@ nav ul {
 }
 
 .home-info h2 {
-  color: #b605fc;
+  color: #8257e5;
   font-size: 80px;
-  text-shadow: 0px 0px 4px #b405fc;
+  text-shadow: 0px 0px 4px #8257e5;
 }
 
 .home-info h1 {
   color: white;
   font-size: 60px;
   text-transform: uppercase;
-  border-bottom: 1px solid #b405fc;
+  border-bottom: 1px solid #6833e4;
 }
 
 .button-social {
@@ -174,7 +174,7 @@ nav ul {
 
 .button-social svg:hover {
   fill: white;
-  box-shadow: 0 0 6px #b405fc;
+  box-shadow: 0 0 6px #9466ff;
 }
 
 /* Home Finalizado */
@@ -190,9 +190,9 @@ nav ul {
 
 .about-title h2 {
   font-family: Arial, Helvetica, sans-serif;
-  color: #b405fc;
+  color: #8257e5;
   font-size: 50px;
-  border-bottom: 2px solid #b405fc;
+  border-bottom: 2px solid #6833e4;
   text-align: left;
   text-transform: uppercase;
 }
@@ -231,10 +231,10 @@ nav ul {
 
 .my-technologies h2 {
   font-size: 30px;
-  color: #b405fc;
+  color: #8257e5;
   text-align: center;
   text-transform: uppercase;
-  border-top: 2px solid #b405fc;
+  border-top: 2px solid #6833e4;
 }
 
 .my-technologies span {
@@ -265,16 +265,16 @@ nav ul {
 }
 
 .icon svg {
-  fill: #b605fc;
-  opacity: 0.6;
+  fill: #8257e5;
+  opacity: 0.7;
   width: 100px;
   height: 100px;
   transition: all 0.3s ease;
 }
 
 .icon svg:hover {
+  fill: #9466ff;
   opacity: 1;
-  filter: brightness();
   transform: scale(0.9);
 }
 
@@ -291,9 +291,9 @@ nav ul {
 
 .projectsTitle h2 {
   font-family: Arial, Helvetica, sans-serif;
-  color: #b405fc;
+  color: #8257e5;
   font-size: 50px;
-  border-bottom: 2px solid #b405fc;
+  border-bottom: 2px solid #6833e4;
   text-align: left;
   text-transform: uppercase;
 }
@@ -352,7 +352,7 @@ nav ul {
   height: 100%;
   object-fit: cover;
   opacity: 0.6;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .overlayTitle {
@@ -374,12 +374,12 @@ nav ul {
 }
 
 .overlayTitle p {
-  color: #b405fc;
+  color: #8257e5;
   font-weight: 600;
 }
 
 .overlay:hover {
-  border: 1px solid #b405fc;
+  border: 1px solid #9466ff;
 }
 
 .overlayActive img:hover {
@@ -388,7 +388,7 @@ nav ul {
 
 #readBtn {
   background: none;
-  border: 1px solid #b405fc;
+  border: 1px solid #8257e5;
   font-size: 16px;
   padding: 10px;
   margin: 15px 0;
@@ -398,7 +398,7 @@ nav ul {
 }
 
 #readBtn:hover {
-  box-shadow: 0px 0px 6px #b405fc;
+  box-shadow: 0px 0px 6px #8257e5;
 }
 
 #projectsInfo {
@@ -450,7 +450,7 @@ nav ul {
 }
 
 .rocketnotesInfo h2 {
-  color: #b405fc;
+  color: #8257e5;
 }
 
 .rocketnotesInfo p {
@@ -477,13 +477,13 @@ nav ul {
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  border: 1px solid #b405fc;
+  border: 1px solid #8257e5;
   padding: 8px 5%;
   white-space: nowrap;
 }
 
 .buttonRocket a:hover {
-  box-shadow: 0px 0px 6px #b405fc;
+  box-shadow: 0px 0px 6px #8257e5;
 }
 
 #btnTop {
@@ -515,12 +515,12 @@ footer {
   width: 100%;
   padding: 20px 2%;
   background-color: rgba(0, 0, 0, 0.4);
-  border-top: solid 1px #b405fc;
+  border-top: solid 1px #6833e4;
 }
 
 footer p {
   text-align: center;
-  color: #b405fc;
+  color: #8257e5;
 }
 
 footer .social-network {
@@ -674,7 +674,7 @@ footer img:hover {
   }
   .mobile-menu li {
     opacity: 1;
-    border-bottom: 1px solid #b405fc;
+    border-bottom: 1px solid #6833e4;
     padding: 2%;
   }
   .mobile-menu li a {
