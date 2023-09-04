@@ -37,7 +37,7 @@ body {
 
 header {
   width: 100%;
-  padding: 10px 2%;
+  padding: 15px 2%;
   background-color: rgba(100, 100, 100, 0.11);
   backdrop-filter: blur(10px);
   position: fixed;
@@ -46,10 +46,15 @@ header {
   z-index: 999;
 }
 
-header img {
-  max-width: 250px;
-  width: 100%;
-  filter: brightness(1.1);
+#logo {
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+}
+
+#logo span {
+  color: #b405fc;
+  text-decoration: none;
 }
 
 nav {
@@ -70,13 +75,27 @@ nav ul {
   color: white;
   opacity: 0.6;
   transition: all 0.3s ease;
-  border: 2px solid #b405fc;
-  border-radius: 5px;
   padding: 5px 10px;
+  position: relative;
 }
 
-ul li a:hover {
+.nav-list ul li a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #b405fc;
+  transition: all 0.3s ease;
+}
+
+.nav-list ul li a:hover {
   opacity: 1;
+}
+
+.nav-list ul li a:hover::before {
+  width: 100%;
 }
 
 .mobile-menu-icon {
@@ -147,15 +166,15 @@ ul li a:hover {
   width: 60px;
   height: 60px;
   padding: 5px;
-  fill: gray;
+  fill: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
-  border: 2px solid #b405fc;
+  background: #222;
   transition: all 0.2s ease-in-out;
 }
 
 .button-social svg:hover {
   fill: white;
-  box-shadow: 0 0 5px #633bbc;
+  box-shadow: 0 0 6px #b405fc;
 }
 
 /* Home Finalizado */
@@ -552,7 +571,6 @@ footer img:hover {
   .myProjects {
     height: 399px;
     overflow: hidden;
-    grid-template-columns: repeat(3, 1fr);
   }
   .myProjects.active {
     height: auto;

@@ -10,6 +10,5 @@ showMobileMenu();
 showProjectsInfo();
 handleScrollButton();
 handleReadMoreButton();
-
 handleCopyEmail("copyEmail1");
 handleCopyEmail("copyEmail2");
