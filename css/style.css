@@ -525,6 +525,8 @@ footer p {
 footer .social-network {
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 footer button {
@@ -533,14 +535,15 @@ footer button {
   cursor: pointer;
 }
 
-footer img {
+footer svg {
   opacity: 1;
   width: 50px;
   height: 50px;
+  fill: #8257e5;
   transition: all 0.3s ease;
 }
 
-footer img:hover {
+footer svg:hover {
   filter: brightness(1.1);
   transform: scale(1.1);
 }
