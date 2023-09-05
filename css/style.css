@@ -23,7 +23,7 @@ body {
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: #121215;
+  background: #121214;
 }
 
 .container {
@@ -221,6 +221,7 @@ nav ul {
 .about-info p {
   color: white;
   max-width: 550px;
+  font-size: 19px;
 }
 
 .about-text p:not(:first-child) {
@@ -496,11 +497,9 @@ nav ul {
   width: 30px;
   height: 30px;
   cursor: pointer;
-}
-
-#btnTop img {
-  width: 16px;
-  height: 16px;
+  border-radius: 50%;
+  color: #8257e5;
+  font-size: 20px;
 }
 
 #btnTop:hover {
@@ -626,6 +625,7 @@ footer img:hover {
   }
   .about-me p {
     text-align: center;
+    font-size: 16px;
   }
   .icon svg {
     width: 65px;
@@ -683,6 +683,7 @@ footer img:hover {
     border: none;
     color: white;
   }
+
   .rocketnotesInfo {
     width: auto;
   }
