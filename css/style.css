@@ -42,7 +42,7 @@ header {
   backdrop-filter: blur(10px);
   position: fixed;
   top: 0;
-  border-bottom: solid 1px #6833e4;
+  border-bottom: solid 1px #363142;
   z-index: 999;
 }
 
